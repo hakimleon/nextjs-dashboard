@@ -6,8 +6,9 @@ import { lusitana } from './ui/fonts';
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col p-2">
-      <div className="flex h-20 shrink-0 items-end rounded-lg bg-blue-500 p-4 md:h-24">
+      <div className="flex h-20  justify-between items-center rounded-lg bg-blue-500 p-4 md:h-24">
         <AcmeLogo />
+        <Link className='text-white font-bold text-lg' href={'/dashboard'}>Dashboard</Link>
       </div>
       <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
         <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-100 px-6 py-10 md:w-2/5 md:px-20">
@@ -17,7 +18,7 @@ export default function Page() {
               Next.js Learn Course
             </a>
             , brought to you by Vercel.
-          </p>
+          </p>  
           <Link
             href="/login"
             className="self-start font-semibold rounded-md bg-blue-500 px-6 py-2 text-sm shadow-xl hover:shadow-md  text-white transition-all hover:bg-blue-400 md:text-base"
